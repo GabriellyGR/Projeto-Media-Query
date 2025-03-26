@@ -7,6 +7,8 @@
 html,body{
     padding: 0px;
     margin: 0px;
+    background-color: rgb(39, 36, 36);
+    color: white;
 }
 
 header{
@@ -97,7 +99,7 @@ header > nav > ul > li{
 .titulo-1{
     text-align: justify;
     font-size: 20px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-left: none;
     border-right: none;
     padding: 5px;
