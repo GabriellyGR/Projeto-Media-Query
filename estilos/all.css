@@ -2,6 +2,8 @@
 
 /* Estilo para dispositivos móveis */
 
+/* Configurações gerais para todas a paginas */
+
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
 html,body{
@@ -68,6 +70,69 @@ body > header > nav > ul > li > a:visited{
     color: white;
 }
 
+article{
+    max-width: 270px;
+    margin: auto;
+    margin: 0px auto 15px auto;
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.conteudo{
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px;
+   
+}
+
+.titulo-1{
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+
+.titulo-2{
+    font-size:17px ;
+    padding: 5px;
+}
+
+.lista-preparo{
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    line-height: 18px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px;
+    line-height: 10px;
+}
+
+footer > p{
+    margin: 3px 0px 3px 0px;
+}
+
+footer > p > a{
+    color: white;  
+    text-decoration: none; 
+}
+
+footer > p > a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo específico pagina 1 - "Massas" */
+
 #nhoque{
     position: relative;
     background: url(../imagens/nhoque.jpg) center center no-repeat;
@@ -98,46 +163,6 @@ body > header > nav > ul > li > a:visited{
     font-size: 25px;
 }
 
-article{
-    max-width: 270px;
-    margin: auto;
-    margin: 0px auto 15px auto;
-    border: 1px solid rgba(0, 0, 0, 0.226);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.conteudo{
-    text-align: justify;
-    font-size: 14px;
-    padding: 10px;
-   
-}
-
-.titulo-1{
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid black;
-    border-left: none;
-    border-right: none;
-    padding: 5px;
-}
-
-.lista-ingredientes{
-    padding-left: 20px;
-}
-
-.titulo-2{
-    font-size:17px ;
-    padding: 5px;
-}
-
-.lista-preparo{
-    list-style-position: inside;
-    padding: 0;
-    margin: 0;
-    line-height: 18px;
-}
 
 #macarrao{
     position: relative;
@@ -170,25 +195,35 @@ article{
     text-align: center;
 }
 
-footer{
-    background-color: black;
+/* Estilo específico página 2 - "Salgados" */
+
+#coxinha{
+    position: relative;
+    background: url(../imagens/coxinha.jpg) top center no-repeat;
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    display: flex;
     color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+#coxinha::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568)
+}
+
+#coxinha > h1{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 25px;
     text-align: center;
-    font-size: 10px;
-    padding: 2px;
-    line-height: 10px;
-}
-
-footer > p{
-    margin: 3px 0px 3px 0px;
-}
-
-footer > p > a{
-    color: white;  
-    text-decoration: none; 
-}
-
-footer > p > a:visited{
-    color: white;
-    text-decoration: none;
 }
