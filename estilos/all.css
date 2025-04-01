@@ -191,7 +191,7 @@ footer > p > a:visited{
     position: relative;
     z-index: 1;
     margin: 0;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -252,6 +252,70 @@ footer > p > a:visited{
 }
 
 #croquete > h1{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*Estilo específico pagina 3 - "Doces" */
+
+#pudim{
+    position: relative;
+    background: url(../imagens/pudim.jpg) top center no-repeat;
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+#pudim::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568)
+}
+
+#pudim > h1{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+#brigadeiro{
+    position: relative;
+    background: url(../imagens/brigadeiro.jpg) center center no-repeat;
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+#brigadeiro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568)
+}
+
+#brigadeiro > h1{
     position: relative;
     z-index: 1;
     margin: 0;
